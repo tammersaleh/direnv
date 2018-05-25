@@ -18,7 +18,7 @@ used to build solutions similar to rbenv, pyenv and phpenv.
 
 ## Example
 
-```
+``` console
 $ cd ~/my_project
 $ echo ${FOO-nope}
 nope
@@ -43,10 +43,10 @@ nope
 
 Dependencies: make, golang
 
-```bash
-git clone https://github.com/direnv/direnv
-cd direnv
-make install
+``` console
+$ git clone https://github.com/direnv/direnv
+$ cd direnv
+$ make install
 # or symlink ./direnv into the $PATH
 ```
 
@@ -84,7 +84,7 @@ has its own extension mechanism:
 
 Add the following line at the end of the `~/.bashrc` file:
 
-```sh
+``` bash
 eval "$(direnv hook bash)"
 ```
 
@@ -95,7 +95,7 @@ that manipulate the prompt.
 
 Add the following line at the end of the `~/.zshrc` file:
 
-```sh
+``` zsh
 eval "$(direnv hook zsh)"
 ```
 
@@ -103,7 +103,7 @@ eval "$(direnv hook zsh)"
 
 Add the following line at the end of the `~/.config/fish/config.fish` file:
 
-```fish
+``` fish
 eval (direnv hook fish)
 ```
 
@@ -111,7 +111,7 @@ eval (direnv hook fish)
 
 Add the following line at the end of the `~/.cshrc` file:
 
-```sh
+``` tcsh
 eval `direnv hook tcsh`
 ```
 
